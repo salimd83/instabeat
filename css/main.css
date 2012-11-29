@@ -45,9 +45,10 @@ nav ul li a{
 	font-weight: bold;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+nav ul li a:hover, nav ul li.selected a{ color:#0cd1f1; }
 
 #product header #logo{ padding-bottom: 20px; }
-header #logo a img{ margin-top: -8px; margin-left: -78px; }
+header #logo a img{ margin-top: -8px; margin-left: -74px; }
 header #logo p{ 
 	margin-left: 0px; 
 	margin-top: -12px; 
@@ -67,7 +68,7 @@ section#body .left{
 	padding: 20px;
 }
 section#body .wide{ background: url(../images/product-focus.gif) top right no-repeat; margin-bottom: 40px; }
-section#body aside{ float: right; width: 140px; background: #0dc5e2 url(../images/price-gradient-bg.gif) top left repeat-x; padding: 37px 50px; }
+section#body aside{ float: right; width: 140px; background: #0cd1f1 url(../images/price-gradient-bg.gif) top left repeat-x; padding: 37px 50px; }
 
 section#body .left h1{ color: #10a7bf; margin: 20px 20px 20px 35px; width: 300px; }
 section#body .left p{ color: #154d60; margin: 20px 20px 20px 35px; width: 300px; }
@@ -145,11 +146,12 @@ form div.submit input{
 form div.submit input:hover{ opacity:0.8; }
 
 footer.wrapper{ padding-top: 20px; font-size: 12px; margin-bottom: 80px; }
-footer .left{ float: left; width: 700px; }
+footer .left{ float: left; width: 700px; text-shadow:1px 1px rgba(0,0,0,0.2); }
 footer aside{ float: right; width: 240px; }
 
 footer .left span{ padding-top: 6px; display: block; font-size: 11px; letter-spacing: 0.08em; }
-footer aside h5{ text-transform: uppercase; font-size: 12px; margin-bottom: 2px; }
+footer aside h5{ text-transform: uppercase; font-size: 12px; margin-bottom: 2px; text-shadow:1px 1px rgba(0,0,0,0.2); }
 footer aside nav a span{ padding: 0 3px; }
+footer aside nav a{ line-height: 16px; text-shadow:1px 1px rgba(0,0,0,0.2); }
 
 #supersized{ top:-60px; }
