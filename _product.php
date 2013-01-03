@@ -12,9 +12,9 @@
 										  mounted on your goggles, with real-time visual 
 										  feedback and no chest belt!">
 			
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/supersized.css" media="screen" />
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/reset.css" type="text/ccs">
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/main.css" type="text/ccs">
 		
 		<title>Instabeat :: take control of your swim!</title>
 		
@@ -53,7 +53,7 @@
 				</p>
 			</div> <!-- END .left -->
 
-			<form action="process/send-order.php" method="post">
+			<form action="" methode="">
 				<div class="text">
 					<label for="first_name">First Name</label><input type="text" name="first_name">
 				</div>

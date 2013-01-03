@@ -22,8 +22,10 @@ h5{
 }
 p{ font-size: 13px; font-family: Arial, sans-serif; line-height: 16px; }
 a{ text-decoration: none; color: #fff; }
-form input{ width: 209px; height: 49px; padding: 0 10px; }
+form input{ width: 200px; height: 49px; padding: 0 10px; border:#c0c0c0 1px solid; }
 form textarea{ width: 464px; height: 86px; padding: 10px; }
+form select{ padding:16px; width: 120px; }
+form select.country{ width: 245px; }
 form label{ 
 	font-size: 13px; 
 	font-family: arial, sans-serif; 
@@ -34,6 +36,8 @@ form label{
 .wrapper{ width: 1020px; margin: 0 auto; }
 div.clear{ clear: both; }
 form div.text, form div.textarea{ float: left; margin-right: 20px; margin-bottom: 20px; }
+form div.text.last{ margin-right: 0; }
+form div.text.last input{ width: 118px; }
 
 /** Header **/
 #product header{ background:#10a7bf url(../images/product-head.jpg) right 36px no-repeat; }
@@ -48,9 +52,9 @@ nav ul li a{
 nav ul li a:hover, nav ul li.selected a{ color:#0cd1f1; }
 
 #product header #logo{ padding-bottom: 20px; }
-header #logo a img{ margin-top: -8px; margin-left: -74px; }
+header #logo a img{ margin-top: -8px; margin-left: -2px; }
 header #logo p{ 
-	margin-left: 0px; 
+	margin-left: 75px; 
 	margin-top: -12px; 
 	width: 402px; 
 	font-style: italic; 
@@ -59,27 +63,53 @@ header #logo p{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-section#body{ margin-top: 360px; }
-#product section#body{ margin-top: 0; padding-top: 20px; }
+section#body{ margin-top: 300px; }
+#product section#body{ margin-top: 0; padding-top: 20px; width: 874px }
 section#body .left{ 
 	float: left; 
 	width: 730px; 
 	background: #fff url(../images/product-focus.gif) top right no-repeat;
 	padding: 20px;
 }
-section#body .wide{ background: url(../images/product-focus.gif) top right no-repeat; margin-bottom: 40px; }
-section#body aside{ float: right; width: 140px; background: #0cd1f1 url(../images/price-gradient-bg.gif) top left repeat-x; padding: 37px 50px; }
+section#body .wide{ background: url(../images/product-focus-2.gif) 480px 30px no-repeat; margin-bottom: 24px; }
+section#body aside{ 
+	float: right;
+	padd ing: 37px 50px;
+	mar gin-right: -120px;
+}
 
-section#body .left h1{ color: #10a7bf; margin: 20px 20px 20px 35px; width: 300px; }
-section#body .left p{ color: #154d60; margin: 20px 20px 20px 35px; width: 300px; }
+section#body aside a{
+	width: 240px;
+	height: 191px;
+	background: url(../images/order.png) top left repeat-x;
+	display: block;
+}
+
+section#body .left h1{ 
+	color: #10a7bf; 
+	margin: 20px 20px 15px 20px; 
+	width: 370px;
+	text-indent: -9999px;
+	background: url(../images/track-your-swim.png) top left no-repeat;
+	height: 39px;
+}
+section#body .left p{ 
+	color: #154d60; 
+	margin: 15px 20px 13px 20px; 
+	width: 390px;
+}
 
 section#body .wide h1{ 
 	color: #10a7bf; 
-	margin: 20px 0; 
+	margin: 20px 0 10px 0; 
 	width: 568px; 
 	font-size: 40px; 
 }
-section#body .wide p{ color: #727272; margin: 20px 0; width: 441px; }
+section#body .wide p{ 
+	color: #727272;
+	margin: 10px 0 20px 0;
+	width: 441px;
+}
 
 section#body aside h4{ 
 	text-transform: uppercase; 
@@ -89,12 +119,14 @@ section#body aside h4{
 	width: 105px;
 }
 section#body aside p{ margin-top: 5px; word-spacing: 1px; width: 110px }
-section#body .newsletter{ float: left; width: 280px; }
+section#body .newsletter{ float: left; wid th: 280px; clear: both; }
 section#body .newsletter h4{ 
 	color: #464646; 
 	font-size: 20px; 
 	font-weight: bold; 
-	margin: 20px 0 15px 0; 
+	margin: 20px 54px 15px 0;
+	float: left;
+	font-family: arial, sans-serif;
 }
 section#body .newsletter div{ 
 	background: #c2c2c2; 
@@ -108,6 +140,7 @@ section#body .newsletter div{
 	cursor: pointer;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 24px;
+	margin-top: 7px;
 }
 
 section#body .newsletter div:hover{
@@ -127,7 +160,7 @@ p.note{
 	background: url(../images/arrow-right.png) left 7px no-repeat;
 	padding-left: 15px;
 	font-size: 11px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 form div.submit{ display: block; clear: both; width: 100%; }
@@ -139,19 +172,123 @@ form div.submit input{
 	font-size: 24px;
 	font-weight: bold;
 	color: #fff;
-	margin-top: 20px;
+	margin-top: 10px;
 	cursor: pointer;
 }
 
 form div.submit input:hover{ opacity:0.8; }
 
 footer.wrapper{ padding-top: 20px; font-size: 12px; margin-bottom: 80px; }
-footer .left{ float: left; width: 700px; text-shadow:1px 1px rgba(0,0,0,0.2); }
+footer .left{ float: left; width: 700px; te xt-shadow:1px 1px rgba(0,0,0,0.2); }
 footer aside{ float: right; width: 240px; }
 
-footer .left span{ padding-top: 6px; display: block; font-size: 11px; letter-spacing: 0.08em; }
-footer aside h5{ text-transform: uppercase; font-size: 12px; margin-bottom: 2px; text-shadow:1px 1px rgba(0,0,0,0.2); }
+footer aside{ margin-top: -4px; }
+footer .left span{ padding-top: 0px; display: block; font-size: 11px; letter-spacing: 0.08em; }
+footer aside h5{ text-transform: uppercase; font-size: 12px; margin-bottom: 2px; tex t-shadow:1px 1px rgba(0,0,0,0.2); }
 footer aside nav a span{ padding: 0 3px; }
-footer aside nav a{ line-height: 16px; text-shadow:1px 1px rgba(0,0,0,0.2); }
+footer aside nav a{ line-height: 16px; tex t-shadow:1px 1px rgba(0,0,0,0.2); }
+
+#product footer.wrapper{ padding-top: 35px; }
+#product footer{ color: #666666 !important; }
+#product footer aside{ width: 198px; }
+#product footer aside h5{ te xt-shadow: none; }
+#product footer nav a{ color: #666666 !important; text-shadow: none; }
+#product footer .left{ text-shadow: none; margin-left: 74px; }
 
 #supersized{ top:-60px; }
+
+.success p{ color: #10a7bf; margin-bottom: 20px; }
+
+.description{
+	width: 100%;
+	margin-top: 40px;
+}
+
+section#body .wide .description p{
+	width: 100%;
+	clear: both;
+	font-size: 13px;
+	color: #727272;
+}
+
+section#body .wide .description h2{
+	color: #404040;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+section#body .wide .description dl{
+	float: left;
+	width: 245px;
+	margin-top: 35px;
+}
+
+section#body .wide .description dt{
+	clear: both;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+section#body .wide .description dd{
+	color: #727272;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0;
+	background: url(../images/seperator.gif) top right no-repeat;
+	padding: 0 20px;
+	line-height: 18px;
+	padding-bottom: 20px;
+}
+
+section#body .wide .description .first{
+	width: 175px;
+}
+section#body .wide .description .first dd{
+	padding-left: 0px;
+}
+
+section#body .wide .description dl.last{
+	width: 200px;
+}
+
+section#body .wide .description dl.last dd{
+	background: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+section#body .wide .description dd a{
+	color: #10a7bf;
+}
+
+section#body .wide .description dd i{
+	font-style: italic;
+	font-size: 12px;
+	clear: both;
+	display: block;
+}
+
+#frmorder{
+	border-top: #656565 1px dotted;
+	padding-top: 24px;
+}
+
+form span.error{ display: block; clear:both; font-size: 11px; color: #f00; padding-top: 5px; }
+
+#status {
+	display: none;
+	color: #666;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+#status span.error{
+	font-size: 12px;
+}
+
+form span.passed{
+	display: none !important;
+}
+
+input.error{ border:#f00 1px solid !important; }
