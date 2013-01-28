@@ -27,12 +27,13 @@
 
 	</head>
 
-	<body id="product">
+	<body id="product" class="inner-page">
 		
 		<header>
 			<nav id="main-menu">
 				<ul>
-					<li><a href="http://instabeat.wordpress.com/" target="_blank">Blog</a></li>
+					<li><a href="press.php">Press Room</a></li>
+					<li><a href="http://instabeat.me/blog" target="_blank">Blog</a></li>
 					<li class="selected"><a href="product.php">Pre-order</a></li>
 					<li><a href="index.php">Home</a></li>
 				</ul>
@@ -544,10 +545,16 @@
 						    if (xhr.status >= 200 && xhr.status < 300) {
 								
 							  $('#status').fadeIn('normal', function(){ $(this).html(xhr.responseText)} );
+
+							  $('.submit').fadeOut('normal');
+							  $('div.text').fadeOut('normal');
+							  $('div.newsletter').fadeOut('normal');
+							  $('div.note').fadeOut('normal');
 						      
-							  $('.submit input').removeAttr('disabled');
-							  $('.submit').css('opacity', 1);
-							  $('.submit input').css('cursor', 'pointer');
+							  //$('.submit input').removeAttr('disabled');
+							  //$('.submit').css('opacity', 1);
+							  //$('.submit input').css('cursor', 'pointer');
+
 						    }
 						  }
 						}
@@ -557,6 +564,20 @@
 					});
 				});				 
 			-->
+			</script>
+
+			<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-30995048-7']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
 			</script>
 	</body>
 </html>

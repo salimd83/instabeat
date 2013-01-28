@@ -13,7 +13,7 @@
 	$to  = "hobeikahind@gmail.com"; // note the comma
 	//$to  = "yasmine@wondereight.com";
 
-		// subject
+	// subject
 	$subject = 'Instabeat: New Order';
 	// message
 	$message = "
@@ -98,7 +98,7 @@
 	
 	if($mail){
 		echo "<div class='success'>
-				<p>Your order has been submitted successfuly.</p>
+				<p>Your order has been submitted successfully.</p>
 			  </div>";
 	}else{
 		echo "<span class='error' style='background:none'>One or more required fields are missing or invalid, please correct and resend.</span>";

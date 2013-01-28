@@ -10,9 +10,9 @@
 }
 
 body{ background: #10a7bf; color: #fff; font-family: Arial, sans-serif; }
-body#product{ background: #fff; }
+body.inner-page{ background: #fff; }
 
-h1{ font-size: 35px; font-family: 'DaysRegular', Arial, sans-serif; letter-spacing: -0.08em; }
+h1{ font-size: 39px; font-family: 'Days Regular', Arial, sans-serif; font-weight: bold; letter-spacing: -0.08em; }
 h4{ font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 18px; line-height: 22px; }
 h5{ 
 	font-family: "Trebuchet MS", Helvetica, sans-serif; 
@@ -40,7 +40,7 @@ form div.text.last{ margin-right: 0; }
 form div.text.last input{ width: 118px; }
 
 /** Header **/
-#product header{ background:#10a7bf url(../images/product-head.jpg) right 36px no-repeat; }
+.inner-page header{ background:#10a7bf url(../images/product-head.jpg) right 36px no-repeat; }
 header nav{ background: #154d60; width: 100%; float: right; padding-right: 20px; }
 nav ul li{ float: right; padding: 10px 15px; }
 nav ul li a{ 
@@ -51,7 +51,7 @@ nav ul li a{
 }
 nav ul li a:hover, nav ul li.selected a{ color:#0cd1f1; }
 
-#product header #logo{ padding-bottom: 20px; }
+.inner-page header #logo{ padding-bottom: 20px; }
 header #logo a img{ margin-top: -8px; margin-left: -2px; }
 header #logo p{ 
 	margin-left: 75px; 
@@ -64,7 +64,7 @@ header #logo p{
 }
 
 section#body{ margin-top: 300px; }
-#product section#body{ margin-top: 0; padding-top: 20px; width: 874px }
+.inner-page section#body{ margin-top: 0; padding-top: 20px; width: 874px }
 section#body .left{ 
 	float: left; 
 	width: 730px; 
@@ -72,13 +72,13 @@ section#body .left{
 	padding: 20px;
 }
 section#body .wide{ background: url(../images/product-focus-2.gif) 480px 30px no-repeat; margin-bottom: 24px; }
-section#body aside{ 
+body#home section#body aside{ 
 	float: right;
 	padd ing: 37px 50px;
 	mar gin-right: -120px;
 }
 
-section#body aside a{
+body#home section#body aside a{
 	width: 240px;
 	height: 191px;
 	background: url(../images/order.png) top left repeat-x;
@@ -188,16 +188,24 @@ footer aside h5{ text-transform: uppercase; font-size: 12px; margin-bottom: 2px;
 footer aside nav a span{ padding: 0 3px; }
 footer aside nav a{ line-height: 16px; tex t-shadow:1px 1px rgba(0,0,0,0.2); }
 
-#product footer.wrapper{ padding-top: 35px; }
-#product footer{ color: #666666 !important; }
-#product footer aside{ width: 198px; }
-#product footer aside h5{ te xt-shadow: none; }
-#product footer nav a{ color: #666666 !important; text-shadow: none; }
-#product footer .left{ text-shadow: none; margin-left: 74px; }
+.inner-page footer.wrapper{ padding-top: 35px; }
+.inner-page footer{ color: #666666 !important; }
+.inner-page footer aside{ width: 198px; }
+.inner-page footer aside h5{ te xt-shadow: none; }
+.inner-page footer nav a{ color: #666666 !important; text-shadow: none; }
+.inner-page footer .left{ text-shadow: none; margin-left: 74px; }
 
 #supersized{ top:-60px; }
 
-.success p{ color: #10a7bf; margin-bottom: 20px; }
+/*.success p{ color: #10a7bf; margin-bottom: 20px; }*/
+.success p{
+	color: #10A7BF;
+	margin-bottom: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 25px;
+}
 
 .description{
 	width: 100%;
@@ -292,3 +300,103 @@ form span.passed{
 }
 
 input.error{ border:#f00 1px solid !important; }
+
+/* press page */
+#press section#body{ width: 912px; padding-left: 40px; }
+#press div.leftcol{ width:740px; float: left; }
+
+/* press: header */
+#press div.leftcol header{ background: none; width: 740px; float: left; }
+#press div.leftcol header h1{ color: #10a6be; }
+#press div.leftcol header h1 span{ 
+	color:#727272; 
+	font: 11px arial, sans-serif; 
+	display: block; 
+	letter-spacing: normal;
+}
+#press div.leftcol header h1 span a{ color: #10a6be; }
+
+/* press: form & input */
+#press div.leftcol header form{ margin-top: 20px; float: left; }
+#press div.leftcol header form input,
+#press div.leftcol header form input:focus{ outline: none; }
+
+/* press: search */
+#press div.leftcol header #search{ margin-right: 10px; float: left; width: 264px; }
+#press div.leftcol header #search input{ border: none; background: #0cd1f1; height: 35px; font-size: 13px; color: #fff; margin: 0; float: left; }
+#press div.leftcol header #search div.text{ margin: 0; float:left; }
+#press div.leftcol header #search .text input{ width:193px; }
+#press div.leftcol header #search .btn{ float: left; }
+#press div.leftcol header #search .btn input{ 
+	width: 48px; 
+	background:#0cd1f1 url('../images/search-btn-icon.gif') center center no-repeat; 
+	cursor: pointer; 
+}
+#press div.leftcol header #search ::-webkit-input-placeholder { color: #eee; }
+#press div.leftcol header #search :-moz-placeholder { color: #eee; }
+#press div.leftcol header #search ::-moz-placeholder { color: #eee; }
+#press div.leftcol header #search :-ms-input-placeholder { color: #eee; }
+
+/* press: newsletter */
+#press div.leftcol header #newsletter{ width: 400px; }
+#press div.leftcol header #newsletter input{  font-size: 13px; height: 33px; color: #727272; float: left; }
+#press div.leftcol header #newsletter .text input{ border:#ccc 1px solid; border-right: none; }
+#press div.leftcol header #newsletter .text{ margin: 0; }
+#press div.leftcol header #newsletter .btn input{ 
+	background: #06dafc url(../images/subscribe.gif) bottom left no-repeat; 
+	width: 98px;
+	border: none;
+	height: 35px;
+	cursor: pointer;
+}
+
+/* press: nav */
+#press .nav{ width: 100%; float: left; color: #727272; font-size: 12px; margin-top: 20px; }
+#press .nav a{ color: #727272; font-size: 12px; text-decoration: underline; }
+
+/* press: articles */
+#press .data{ float: left; width: 740px; }
+#press .data article{ 
+	border-bottom:#656565 1px dotted; 
+	font-family: tahoma, arial, sans-serif; 
+	font-size: 12px;
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+	background: url(../images/press/logo-1.jpg) top right no-repeat;
+}
+#press .data article time{ font-size:11px; color: #363436; text-transform: uppercase; }
+#press .data article h6{ color: #363436; font-weight: bold; margin: 2px 0; }
+#press .data article p{ color: #727272; margin-bottom: 20px; }
+#press .data article div.media{ margin-bottom: 20px; }
+
+/* press: siderbar */
+#press section#body aside{ float: right; width: 150px; margin-top: 74px; }
+#press section#body aside a#pre-order-box{ 
+	display: block;
+	padding: 24px 20px;
+	background: #0cd2f1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #0cd2f1 0%, #10a7bf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0cd2f1), color-stop(100%,#10a7bf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0cd2f1 0%,#10a7bf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #0cd2f1 0%,#10a7bf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #0cd2f1 0%,#10a7bf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #0cd2f1 0%,#10a7bf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0cd2f1', endColorstr='#10a7bf',GradientType=0 ); /* IE6-9 */
+}
+#press section#body aside a#pre-order-box h1{
+	font-family: 'DaysRegular', Arial, sans-serif;
+	font-size: 32px;
+	letter-spacing: 0.01em;
+}
+
+#press section#body aside #dl-press-kit{ 
+	margin: 17px 0; 
+	border-top:#656565 1px dotted; 
+	border-bottom: #656565 1px dotted;
+	padding: 16px 0;
+}
+#press section#body aside #dl-press-kit a{ color:#727272; display: block; font-size: 14px; font-family: arial, sans-serif; }
+#press section#body aside #dl-press-kit a img{ margin-bottom: 3px; }
+#press section#body aside #dl-press-kit a span{ color: #10a7bf; }
+
